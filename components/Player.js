@@ -1,6 +1,6 @@
 
-import {  SwitchHorizontalIcon, VolumeOffIcon, VolumeUpIcon } from '@heroicons/react/outline'
-import {FastForwardIcon, PauseIcon, PlayIcon, ReplyIcon, RewindIcon} from '@heroicons/react/solid'
+// import {  SwitchHorizontalIcon, VolumeOffIcon, VolumeUpIcon } from '@heroicons/react/24/outline'
+import { PauseIcon, PlayIcon} from '@heroicons/react/24/solid'
 import { debounce } from 'lodash'
 import { useSession } from 'next-auth/react'
 import React, { useCallback, useEffect, useState } from 'react'
@@ -68,24 +68,24 @@ function Player() {
         </div>
       </div>
       <div className='flex items-center justify-evenly'>
-        <SwitchHorizontalIcon className='button'/>
-        <RewindIcon className='button'/>
+        {/* <SwitchHorizontalIcon className='button'/> */}
+        {/* <RewindIcon className='button'/> */}
         {isPlaying ? (<PauseIcon className='button w-10 h-10' onClick={handlePlayPause}/>) : (<PlayIcon className='button w-10 h-10'onClick={handlePlayPause}/>)}
-        <FastForwardIcon className='button'/>
-        <ReplyIcon className='button'/>
+        {/* <FastForwardIcon className='button'/> */}
+        {/* <ReplyIcon className='button'/> */}
       </div>
       <div className='flex items-center space-x-3 md:space-x-4 justify-end pr-5'>
-       <VolumeOffIcon className='button' 
+       {/* <VolumeOffIcon className='button' 
        onClick={()=>volume>0 && setVolume(10)}
-       />
+       /> */}
        <input type="range" 
        className='w-14 md:w-28'
        value={volume}
        onChange={(e)=>setVolume(Number(e.target.value))}
        />
-       <VolumeUpIcon className='button'
+       {/* <VolumeUpIcon className='button'
        onClick={()=>volume<100 && setVolume(volume+10)}
-       />
+       /> */}
       </div>
     </div>
   )

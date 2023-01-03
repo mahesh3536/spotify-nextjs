@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from '@heroicons/react/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { shuffle } from 'lodash'
 import { useSession } from 'next-auth/react'
 import React, { useEffect, useState } from 'react'

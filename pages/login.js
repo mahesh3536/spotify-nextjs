@@ -4,7 +4,7 @@ function Login({ providers }) {
   return (
     <div className='flex flex-col items-center bg-black min-h-screen justify-center w-full'>
       <img src='https://links.papareact.com/9xl' className='w-52 mb-5'/>
-      {console.log(providers)}
+      
       {
         
         Object.values(providers).map((provider)=>(
